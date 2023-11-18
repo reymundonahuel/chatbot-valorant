@@ -1,45 +1,27 @@
 program Valorant;
 
-uses initLol;
+uses initValorantData;
 
 const
-  q_agentes = 22;
-
-type
-  habilidades_record = RECORD
-    habilidad1_name:string;
-    habilidad1_description:string;
-    habilidad1_price:string;
-    habilidad1_cantidadQuePuedeComprar:string;
-
-    habilidad2_name:string;
-    habilidad2_description:string;
-    habilidad2_cantidadQuePuedeComprar:string;
-    habilidad2_price:string;
-
-    habilidad3_name:string;
-    habilidad3_description:string;
-    habilidad3_price:string;
-    habilidad3_cantidadQuePuedeComprar:string;
-
-    habilidad4_name:string;
-    habilidad4_description:string;
-    habilidad4_price:string;
-    habilidad4_cantidadQuePuedeComprar:string;
-  end;
-
-  clases_agentes_record = RECORD
-    name:string;
-    description:string;
-  end;
-
-  agentes_record = RECORD
+  {Respuestas del Chat Bot}
+  name_chatbot = 'ValorantBot';
+  bienvenida_bot = 'Hola! Mi nombre es {name_chatbot}! ¿Como es el tuyo?';
+  saludos_hablante = 'Genial {name_hablante}! bonito nombre por cierto. Que te gustaria preguntarme sobre Valorant? Puedes preguntarme sobre agentes y mapas';
+  option_404 = 'No he encontrado acerca de eso {name_hablante} 🙄';
+  sugerir_ejemplos = 'Escribe la palabra ejemplos o dame ejemplos';
+  ejemplos = 'Prueba decir algo como: ¿Cuantos agentes hay en el juego? ó ¿Como se llaman los agentes? ó ¿Que hace el agente Yoru? ó ¿Que mapas existen?';
 
 
 
+  longNameHablante = 15;
+  longNameChatbot = 14;
 
-  end;
+  var
+  name_hablante:string;
+
 
 begin
+
+
 end.
 
