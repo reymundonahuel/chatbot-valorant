@@ -2,7 +2,12 @@ unit initValorantData;
 
 {$mode ObjFPC}{$H+}
 
+uses funciones;
+
 interface
+procedure initArrays;
+
+
 const
   q_agentes = 22;
   q_maps = 10;
@@ -108,7 +113,7 @@ type
 
   clases:array [1..q_agentes] of clases_agentes_record;
 
-procedure initArrays;
+
 
 uses
   Classes, SysUtils;
@@ -187,7 +192,7 @@ habilidades[2].habilidad4_name = 'Golpe orbital';
 habilidades[2].habilidad4_description = 'Equipa un mapa táctico de la zona y gracias a este puedes señalar una ubicación para disparar un potente golpe orbital de láser. Provoca un gran daño prolongado a los enemigos que se encuentren en la zona afectada.';
 habilidades[2].habilidad4_price = '6 puntos de definitiva';
 
-{ Brimstone }
+{ Chamber }
 agentes[2].id = 3;
 agentes[2].name = 'Chamber';
 agentes[2].description = 'Chamber es un diseñador de armas siempre bien vestido y bien pertrechado que expulsa a los agresores con precisión letal. Aprovecha su arsenal personalizado para repeler, eliminar enemigos a distancia y crear la contingencia perfecta para cada plan.';
@@ -209,10 +214,76 @@ habilidades[2].habilidad4_name = 'Tour de force';
 habilidades[2].habilidad4_description = 'actívala para sacar un poderoso rifle de francotirador personalizado que mata a los enemigos con cualquier impacto directo. Matar a un enemigo genera un campo persistente que ralentiza a los jugadores que se encuentren en su interior.';
 habilidades[2].habilidad4_price = '7 puntos de definitiva';
 
+{ Cypher }
+agentes[2].id = 4;
+agentes[2].name = 'Cypher';
+agentes[2].description = 'Cypher, como buen centinela, es capaz de adelantarse a los movimientos de los enemigos y cubrir posiciones. Sus habilidades están destinadas a la defensa, así que te recomendamos que lo uses si lo tuyo no es estar al pie del cañón y en el frente de línea. Más bien hay que usarlo creando estrategias con nuestros compañeros y acompañarlos en la batalla dándoles apoyo. Es un personaje que puede funcionar genial cuando se juega en el bando de los defensores y hay que mantener a salvo una zona de la SPIKE';
+agentes[2].clase = 'Centinela';
+agentes[2].disponibilidad = 'bloqueado de inicio (puede conseguirse mediante su contrato o pagando 1000 puntos Valorant).';
+agentes[2].habilidades = 4;
+habilidades[2].idAgente = 4;
+habilidades[2].agente = 'Cypher';
+habilidades[2].habilidad1_name = 'Prisión cibernética';
+habilidades[2].habilidad1_description = 'lanzas de inmediato una prisión cibernética. Esta prisión puede activarse a distancia, apuntando sobre ella, y al hacerlo se creará una zona que bloquea la visión de los enemigos si quieren atravesarla';
+habilidades[2].habilidad1_price = '100 créditos';
+habilidades[2].habilidad2_name = 'Cámara espía';
+habilidades[2].habilidad2_description = 'te equipas con una cámara espía que puedes disparar para fijar en una ubicación. Una vez hecho eso puedes controlar la visión de la cámara (dejando expuesto a Cypher, así que cuidado) para ver lo mismo que ella ve, e incluso puedes disparar un dardo marcador que revelará la posición del enemigo al que alcance.';
+habilidades[2].habilidad2_price = 'gratuita';
+habilidades[2].habilidad3_name = 'Cable trampa';
+habilidades[2].habilidad3_description = 'te equipas con un cable trampa, destructible pero oculto. Puedes dispararlo hacia una pared y este se extenderá hacia la pared del lado opuesto, y también puedes recogerlo para moverlo hacia otra posición. Los jugadores enemigos que atraviesen el cable se quedarán anclados y su posición se revelará, si no logran dispararle a tiempo para librarse acabarán finalmente aturdidos.';
+habilidades[2].habilidad3_price = '200 créditos';
+habilidades[2].habilidad4_name = 'Hurto neuronal';
+habilidades[2].habilidad4_description = 'puedes apuntar sobre un enemigo muerto con tu mira y usar esta habilidad al instante para revelar la posición de todos los enemigos vivos restantes. Especialmente útil cuando solo quedan unos pocos oponentes o no sabes dónde se esconden.';
+habilidades[2].habilidad4_price = '7 puntos de definitiva';
 
+{ Fade }
+agentes[2].id = 5;
+agentes[2].name = 'Fade';
+agentes[2].description = 'Fade, la cazarrecompensas turca, desata el poder de las pesadillas para apoderarse de los secretos del enemigo. En armonía con el terror puro, acecha a sus objetivos y revela sus miedos más profundos antes de aplastarlos en la oscuridad';
+agentes[2].clase = 'Iniciador';
+agentes[2].disponibilidad = 'bloqueado de inicio (puede conseguirse mediante su contrato o pagando 1000 puntos Valorant).';
+agentes[2].habilidades = 5;
+habilidades[2].idAgente = 5;
+habilidades[2].agente = 'Fade';
+habilidades[2].habilidad1_name = 'Capturar';
+habilidades[2].habilidad1_description = 'equipa un orbe de tinta de las pesadillas. Puede disparar el orbe para hacerlo caer en picado al suelo después de un tiempo determinado. Al impactar la tinta explotará y creará una zona en la que los enemigos que queden atrapados en ella no podrán escapar por medios normales';
+habilidades[2].habilidad1_price = '200 créditos';
+habilidades[2].habilidad2_name = 'Atormentar';
+habilidades[2].habilidad2_description = 'equipa una entidad de las pesadillas. Puede disparar el orbe para hacerlo caer en picado al suelo después de un tiempo determinado. Al impactar se convertirá en un ente de las pesadillas que revelará la ubicación de los enemigos en su línea de visión. Los enemigos pueden destruir esta entidad';
+habilidades[2].habilidad2_price = 'gratuita';
+habilidades[2].habilidad3_name = 'Acechadora';
+habilidades[2].habilidad3_description = 'te equipas con una Acechadora que puedes lanzar en línea recta. La Acechadora se enfocará en cualquier enemigo o rastro en su cono de visión frontal y lo perseguirá y ofuscará si lo alcanza';
+habilidades[2].habilidad3_price = '250 créditos';
+habilidades[2].habilidad4_name = 'Anochecer';
+habilidades[2].habilidad4_description = 'Fade se equipa con el poder del Miedo. Esto le permite lanzar una onda de energía de las pesadillas que puede atravesar paredes. La energía crea un rastro hacia el oponente, además de ensordecerlo y debilitarlo';
+habilidades[2].habilidad4_price = '7 puntos de definitiva';
+
+{ Gekko }
+agentes[2].id = 6;
+agentes[2].name = 'Gekko';
+agentes[2].description = 'Gekko lidera una pequeña pandilla de calamitosas criaturas. Sus colegas toman la delantera para dispersar a los enemigos, mientras que Gekko los persigue para luego reagruparse y repetir el proceso.';
+agentes[2].clase = 'Iniciador';
+agentes[2].disponibilidad = 'bloqueado de inicio (puede conseguirse mediante su contrato o pagando 1000 puntos Valorant).';
+agentes[2].habilidades = 6;
+habilidades[2].idAgente = 6;
+habilidades[2].agente = 'Gekko';
+habilidades[2].habilidad1_name = 'Wingman';
+habilidades[2].habilidad1_description = 'equipa a Wingman. Dispara para mandar a Wingman hacia delante en busca de enemigos. Wingman libera una explosión aturdidora en dirección al primer enemigo que ve. Alterna el modo de disparo mientras apuntas a una zona de la Spike o a una Spike colocada para que Wingman la coloque o la desarme. Para colocarla, Gekko debe tener la Spike en su inventario. Cuando Wingman desaparece, vuelve a su estado de glóbulo en reposo. Intreactúa para recuperar el glóbulo y obtener otra carga de Wingman tras un breve enfriamiento.';
+habilidades[2].habilidad1_price = '300 créditos';
+habilidades[2].habilidad2_name = 'Dizzy';
+habilidades[2].habilidad2_description = 'equipa a Dizzy. Dispara para lanzar a Dizzy volando hacia delante. Dizzy carga y libera explosiones de plasma hacia los enemigos en su campo de visión. El plasma ciega a los enemigos alcanzados. Cuando Dizzy desaparece, vuelve a su estado de glóbulo en reposo. Interactúa para recuperar el glóbulo y obtener otra carga de Dizzy tras un breve enfriamiento';
+habilidades[2].habilidad2_price = 'gratuita';
+habilidades[2].habilidad3_name = 'Acechadora';
+habilidades[2].habilidad3_description = 'te equipas con una Acechadora que puedes lanzar en línea recta. La Acechadora se enfocará en cualquier enemigo o rastro en su cono de visión frontal y lo perseguirá y ofuscará si lo alcanza';
+habilidades[2].habilidad3_price = '250 créditos';
+habilidades[2].habilidad4_name = 'Anochecer';
+habilidades[2].habilidad4_description = 'Fade se equipa con el poder del Miedo. Esto le permite lanzar una onda de energía de las pesadillas que puede atravesar paredes. La energía crea un rastro hacia el oponente, además de ensordecerlo y debilitarlo';
+habilidades[2].habilidad4_price = '7 puntos de definitiva';
 
 
 end;
+
+
 
 
 end.
