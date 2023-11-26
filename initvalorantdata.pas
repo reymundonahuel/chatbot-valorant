@@ -531,6 +531,76 @@ habilidades[17].habilidad4_name = 'Buscadores';
 habilidades[17].habilidad4_description = 'Invoca a 3 buscadores que son enviados para rastrear enemigos cercanos. Si un buscador alcanza a un rival, le limita su visión.';
 habilidades[17].habilidad4_price = '6 puntos de definitiva';
 
+{ Sova }
+agentes[18].id = 18;
+agentes[18].name = 'Sova';
+agentes[18].description = 'Sova es un personaje ideado para los jugadores más "rastreadores". Gracias a sus habilidades y su arco podrás ir siempre un paso por delante de tus enemigos, ya que puedes hacer volar un dron para buscar y marcar oponentes, por ejemplo, o disparar una flecha que emite un pulso durante unos instantes y que resalta el contorno de los enemigos cercanos incluso cuando estos están detrás de las paredes.';
+agentes[18].clase = 'Iniciador';
+agentes[18].nacionalidad = 'Rusia';
+agentes[18].disponibilidad = 'desbloqueado desde el inicio.';
+agentes[18].habilidades = 18;
+habilidades[18].idAgente = 18;
+habilidades[18].agente = 'Sova';
+habilidades[18].habilidad1_name = 'Flecha explosiva';
+habilidades[18].habilidad1_description = 'Te equipas con un arco de flechas explosivas. Puedes apuntar y disparar para lanzar la flecha hacia delante, al impactar sobre una superficie explotará y hará daño a enemigos cercanos. Si mantienes pulsado el botón de apuntar se amplía el alcance de la flecha. Y si alternas el modo de disparo puedes llegar a crear hasta dos rebotes del proyectil, algo genial para que las flechas lleguen más lejos.';
+habilidades[18].habilidad1_price = '150 créditos';
+habilidades[18].habilidad2_name = 'Proyectil de reconocimiento';
+habilidades[18].habilidad2_description = 'Te equipas con un arco con flechas de reconocimiento. Puedes disparar la flecha y cuando esta impacte se activará y revelará en un área cercana la posición de los enemigos que detecte, solo por unos instantes (y esta flecha puede ser destruida). Si mantienes pulsado el botón de apuntar se amplía el alcance de la flecha. Y si alternas el modo de disparo puedes llegar a crear hasta dos rebotes del proyectil.';
+habilidades[18].habilidad2_price = 'Gratuita';
+habilidades[18].habilidad3_name = 'Dron de reconocimiento';
+habilidades[18].habilidad3_description = 'Te equipas con un dron de reconocimiento. Puedes usarlo para que se despliegue y controlar su vuelo (aunque eso deja a Sova quieto en su posición, hazlo solo cuando sepas que estás a salvo o a cubierto). Se permite controlar el dron durante unos segundos y puedes disparar un dardo marcador que revelará la posición de cualquier enemigo al que alcance.';
+habilidades[18].habilidad3_price = '400 créditos';
+habilidades[18].habilidad4_name = 'Furia del cazador';
+habilidades[18].habilidad4_description = 'Te equipas con un arco especial de proyectiles de energía de largo alcance. Este tipo de flecha atraviesa las paredes y además de infligir bastante daño puede revelar la posición de los enemigos que se encuentren a su paso. Se puede usar hasta 3 veces mientras el temporizador de la habilidad está activo.';
+habilidades[18].habilidad4_price = '8 puntos de definitiva';
+
+{Viper}
+agentes[19].id = 19;
+agentes[19].name = 'Viper';
+agentes[19].description = 'Viper es una agente centrada en aspectos tóxicos y venenosos que puede hacer mucho daño si eres diestro con ella. En especial gustará a los jugadores que quieran ir más a sus anchas sin depender tanto del juego en equipo, aunque bien usada puede apoyar bastante a los compañeros.';
+agentes[19].clase = 'Controlador';
+agentes[19].nacionalidad = 'EE.UU.';
+agentes[19].disponibilidad = 'bloqueado de inicio (puede conseguirse mediante su contrato o pagando 1000 puntos Valorant).';
+agentes[19].habilidades = 19;
+habilidades[19].idAgente = 19;
+habilidades[19].agente = 'Viper';
+habilidades[19].habilidad1_name = 'Nube venenosa';
+habilidades[19].habilidad1_description = 'Te equipas con una granada de gas que puedes lanzar para que permanezca durante toda la ronda. Al activarla liberarás una nube de gas tóxico a cambio de combustible. La granada se puede usar más de una vez o incluso recoger para recolocarla.';
+habilidades[19].habilidad1_price = '200 créditos';
+habilidades[19].habilidad2_name = 'Pantalla tóxica';
+habilidades[19].habilidad2_description = 'Te equipas con un lanzagranadas de gas con el que puedes disparar una larga hilera de granadas. Al activarla creas un muro de gas tóxico a cambio de combustible.';
+habilidades[19].habilidad2_price = 'Gratuita';
+habilidades[19].habilidad3_name = 'Veneno de serpiente';
+habilidades[19].habilidad3_description = 'Te equipas con un lanzador químico. Puedes disparar un cartucho que se rompe al impactar contra el suelo, lo que genera una zona química persistente que daña y ralentiza a los enemigos.';
+habilidades[19].habilidad3_price = '200 créditos';
+habilidades[19].habilidad4_name = 'Pozo de víbora';
+habilidades[19].habilidad4_description = 'Te equipas con un pulverizador químico que puedes disparar para pulverizar una nube química en todas las direcciones alrededor de Viper. Esto genera una gran nube que reduce el alcance de la visión y la vida máxima de los jugadores que se encuentren dentro.';
+habilidades[19].habilidad4_price = '7 puntos de definitiva';
+
+{ Yoru }
+agentes[20].id = 20;
+agentes[20].name = 'Yoru';
+agentes[20].description = 'Yoru abre agujeros en el tejido de la realidad para infiltrarse tras las líneas enemigas sin ser visto. Utiliza el engaño y la agresividad por igual para acabar con sus objetivos antes de que sepan qué ha pasado.';
+agentes[20].clase = 'Duelista';
+agentes[20].nacionalidad = 'Japón';
+agentes[20].disponibilidad = 'bloqueado de inicio (puede conseguirse mediante su contrato o pagando 1000 puntos Valorant).';
+agentes[20].habilidades = 20;
+habilidades[20].idAgente = 20;
+habilidades[20].agente = 'Yoru';
+habilidades[20].habilidad1_name = 'Punto ciego';
+habilidades[20].habilidad1_description = 'Arrancas un fragmento dimensional inestable de la realidad, al lanzarlo activa un destello que se carga al impactar contra una superficie sólida.';
+habilidades[20].habilidad1_price = '250 créditos';
+habilidades[20].habilidad2_name = 'Infiltración';
+habilidades[20].habilidad2_description = 'Preparas un vínculo de grietas, se puede lanzar hacia adelante para teletransportarte a la ubicación o colocarlo en algún lugar en concreto.';
+habilidades[20].habilidad2_price = 'Gratuita';
+habilidades[20].habilidad3_name = 'Engaño';
+habilidades[20].habilidad3_description = 'Te equipas un eco que imita el sonido de pisadas cuando se activa. Puedes activarlo y enviarlo hacia delante o colocarlo en un sitio.';
+habilidades[20].habilidad3_price = '100 créditos';
+habilidades[20].habilidad4_name = 'Viaje interdimensional';
+habilidades[20].habilidad4_description = 'Te colocas una máscara que permite ver entre dimensiones, los enemigos que estén fuera no podrán verte ni hacerte daño.';
+habilidades[20].habilidad4_price = '7 puntos de definitiva';
+
+
 
 
 end;
