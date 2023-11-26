@@ -2,6 +2,7 @@ unit funciones;
 {$mode ObjFPC}{$H+}
 
 interface
+function replaceString(const SourceStr, OldWord, NewWord: string)
 const
 type
 var
@@ -25,6 +26,20 @@ Result := SourceStr;
     PosStart := Pos(OldWord, Result, PosEnd + 1);
   end;
     
+end;
+
+function BuscarPalabra(const cadena, palabra: string): boolean;
+var
+  posicion: integer;
+  Result:string;
+begin
+  // Utilizamos la función Pos para encontrar la posición de la palabra en la cadena
+  // Si la palabra no se encuentra, Pos devuelve 0
+  posicion := Pos(palabra, cadena);
+
+  // Devolvemos true si la posición es diferente de 0, indicando que la palabra fue encontrada
+  // Devolvemos false si la posición es 0, indicando que la palabra no fue encontrada
+  Result := (posicion <> 0);
 end;
 
 
