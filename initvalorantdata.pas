@@ -111,7 +111,7 @@ type
   mapas:array [1..q_maps] of mapas_record;
   arch_mapas:file_mapas;
 
-  clases:array [1..q_agentes] of clases_agentes_record;
+  clases:array [1..4] of clases_agentes_record;
 
 
 
@@ -126,6 +126,10 @@ var
 begin
 { Inicializar agentes }
 { Astra }
+{ for i:= 1 to q_agentes 
+if agentes[i].name == buscado then
+  habilidades[agentes[i].id].habilida2 }
+
 agentes[0].id = 0;
 agentes[0].name = 'Astra';
 agentes[0].description = 'Astra controla las energías del cosmos para dar forma al campo de batalla a su antojo. Con pleno dominio de su forma astral y un gran talento para la anticipación estratégica, siempre va eones por delante de los movimientos de sus enemigos.';

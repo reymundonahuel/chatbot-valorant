@@ -8,7 +8,6 @@ type
 var
 
 implementation
-
 function replaceString(const SourceStr, OldWord, NewWord: string):integer;
 var
 PosStart, PosEnd, OldWordLength: Integer;
@@ -25,7 +24,6 @@ Result := SourceStr;
     Insert(NewWord, Result, PosStart);
     PosStart := Pos(OldWord, Result, PosEnd + 1);
   end;
-    
 end;
 
 function BuscarPalabra(const cadena, palabra: string): boolean;
