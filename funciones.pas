@@ -60,6 +60,7 @@ Result := SourceStr;
   end;
 end;
 
+//tratar de implementar algoritmo de levenstain
 function BuscarPalabra(const cadena, palabra: string): boolean;
 var
   posicion: integer;
