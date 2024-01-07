@@ -100,6 +100,7 @@ type
 
   file_agentes = file of agentes_record;
   file_mapas= file of mapas_record;
+  file_habilidades = file of habilidades_record;
 
 
   var
@@ -603,8 +604,6 @@ habilidades[20].habilidad3_price = '100 créditos';
 habilidades[20].habilidad4_name = 'Viaje interdimensional';
 habilidades[20].habilidad4_description = 'Te colocas una máscara que permite ver entre dimensiones, los enemigos que estén fuera no podrán verte ni hacerte daño.';
 habilidades[20].habilidad4_price = '7 puntos de definitiva';
-
-
 
 
 end;
